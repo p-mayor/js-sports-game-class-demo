@@ -10,7 +10,6 @@ class Game {
 
     generateElement() {
         this.gameElement = document.createElement('div')
-        this.gameElement.style.display = 'flex'
 
         this.resetButton = document.createElement("button")
         this.resetButton.append("reset")
