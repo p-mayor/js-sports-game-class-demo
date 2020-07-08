@@ -21,10 +21,13 @@ class Game {
         this.resetCountDiv = document.createElement('div')
         this.resetCountDiv.append("reset count: " + this.numResets)
 
-        
-        this.gameElement.append(this.team1.teamElement, this.team2.teamElement)
-        this.gameElement.append(this.resetButton, this.resetCountDiv)
-        
+        this.gameElement.append(
+            this.team1.teamElement,
+            this.team2.teamElement,
+            this.resetButton,
+            this.resetCountDiv
+        )
+
         bodyElement.append(this.gameElement)
     }
 
